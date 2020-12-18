@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Luckiest Guy;
+}
+
+@font-face {
+	font-family: Luckiest Guy;
+	src: url('../font/luckiest-guy.ttf') format('truetype');
+}
+
+html {
+	scroll-behavior: smooth;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+header {
+    position: relative;
+	font-family: Luckiest Guy;
+	color: white;
+    letter-spacing: 2px;
+	text-shadow:
+	0.225vw 0.225vw 0 #000,
+	.075vw .075vw 0 #000,
+	.15vw .15vw 0 #000,
+	.3vw .3vw 0 #000,
+	.375vw .375vw 0 #000,
+	.45vw .45vw 0 #000,
+	-.15vw .075vw 0 #000,
+	-.075vw .15vw 0 #000;
+	width: 100%;
+    background-image: linear-gradient(300deg, #4c3c4e 0%, #1f5eb1 74%);	
+    height: 5vw;
+	box-shadow: 0px 0px 0px 3px black;
+    z-index: -1;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    transition: background-size .2s;
+}
+
+header ul {
+    position: relative;
+    list-style-type: none;
+    float: right;
+}
+
+header li {
+    transform: translate(0%, 80%);
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    float: left;
+}
+  
+header li a {
+    font-size: 1.5vw;
+    position: relative;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+header li a:hover{
+    position: relative;
+    font-size: 2vw;
+    line-height:2vw;
+}
+
+header .alignleft a:hover {
+    position: relative;
+    font-size: 3.5vw;
+    line-height:3.5vw;
+}
+
+header .alignleft{
+    font-size: 3vw;
+    float: left;
+    padding-left:30px;
+    transform: translate(0%, 15%);
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+body {
+    /* background-color: #a798a8;
+    /* background-image: linear-gradient(315deg, #4c3c4e 0%, #0d324d 74%); */
+    color: hsl(210, 50%, 72%);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+    background:rgb(24, 23, 23) url('../imgs/stars.png') repeat top center;
+    z-index:0;
+    -moz-animation:move-twink-back 400s linear infinite;
+    -ms-animation:move-twink-back 400s linear infinite;
+    -o-animation:move-twink-back 400s linear infinite;
+    -webkit-animation:move-twink-back 400s linear infinite;
+    animation:move-twink-back 400s linear infinite;
+}
