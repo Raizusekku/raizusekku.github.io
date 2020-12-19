@@ -130,3 +130,27 @@ body {
     -webkit-animation:move-twink-back 400s linear infinite;
     animation:move-twink-back 400s linear infinite;
 }
+
+body div.qbeeModel img {
+    width: 20vw;
+    margin: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+body div.itemPicker {
+    background-color: rgb(219, 219, 74);
+    background-image: linear-gradient(80deg, #79904f71 0%, #b3b143c0 74%);	
+    color: black;
+    position: relative;
+    height: 50vh;
+    border-radius: 50px 50px;
+    margin: 5vw;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+body div.itemPicker h1 {
+    transform: translate(0%, 80%);
+}
