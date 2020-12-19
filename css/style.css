@@ -1,6 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
     font-family: Luckiest Guy;
 }
 
@@ -148,9 +147,9 @@ body div.itemPicker {
     border-radius: 50px 50px;
     margin: 5vw;
     letter-spacing: 2px;
-    text-align: center;
 }
 
 body div.itemPicker h1 {
+    text-align: center;
     transform: translate(0%, 80%);
 }
